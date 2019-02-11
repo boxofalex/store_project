@@ -1,0 +1,61 @@
+@import '../../../styles/shared/index.scss';
+
+
+.headerSection {
+
+    margin: 0;
+}
+
+.header {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: white;
+    border-bottom: 0.5rem solid $mainOrange;
+
+    @include atMediumBelow {
+
+        
+    }
+}
+
+.container {
+
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 2rem 3rem;
+
+    @include atMediumBelow {
+
+        grid-template-rows: 2rem 2rem;
+    }
+}
+
+.cartContainer {
+
+    position: absolute;
+    top: 5.5rem;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    background: $lightGrey;
+    padding: 2rem 2rem;
+    transition: right 0.15s ease-in-out;
+
+    @include atMediumBelow {
+
+        width: 100%;
+        top: 4.5rem;
+    }
+}
+
+.cartContainer.hidden {
+    
+    right: -100%;
+}
+
+

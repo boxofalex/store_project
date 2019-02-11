@@ -1,0 +1,39 @@
+@import '../../../styles/shared/index.scss';
+
+
+.sortForm {
+    
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+
+    & h2 {
+
+      width: 50%;
+      justify-self: flex-end;
+      margin: 0 0 0.5rem 0;
+      text-transform: uppercase;
+
+      @include atMediumBelow {
+
+        text-align: left;
+        width: 100%;
+      }
+    }
+
+    & > div {
+
+      width: 50%;
+      justify-self: flex-end;
+
+
+      @include atMediumBelow {
+
+        width: 100%;
+      }
+    }
+    
+}
+
+
+
+

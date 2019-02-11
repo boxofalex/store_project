@@ -1,0 +1,171 @@
+@import '../../../styles/shared/index.scss';
+
+
+
+.footer {
+
+    width: 95%;
+    margin: 0 auto;
+    border-top: 0.5rem solid $mainOrange;
+}
+
+.footerMenu {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    margin: 2rem 0 3rem 0;
+
+    @include atSmallBelow {
+
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: start;
+        margin: 1rem 0 2rem 0;
+    }
+}
+
+
+.footerMenuItem {
+
+    margin: 0 1rem 0 0;
+
+    & div {
+        margin: 0 0 1.5rem 0;
+        font-size: 1.2rem;
+        font-family: 'Russo One', sans-serif;
+        letter-spacing: 1px; 
+        color: $mainGrey;
+
+        @include atSmallBelow {
+
+            margin: 0 0 1rem 0;
+        }
+    }
+
+    & ul {
+
+    }
+
+    & li {
+        margin: 0.5rem 0 0 0;
+
+        & a {
+    
+            color: $mainGrey;
+        }
+    }
+
+    @include atSmallBelow {
+
+        margin: 0 0 1rem 0;
+    }
+}
+
+.socialSignUp {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 0 3rem 0;
+
+    @include atSmallBelow {
+
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 0 2rem 0;
+    }
+}
+
+.socialMedia {
+
+   margin: 0;
+
+   @include atSmallBelow {
+
+     margin: 0 0 1rem 0;
+   }
+}
+
+.socialMediaTitle {
+    display: block;
+    font-size: 1.2rem;
+    margin: 0 0 0.5rem 0;
+    font-weight: 900;
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: 1px;
+
+    @include atSmallBelow {
+        margin: 0 0 0.5rem 0;
+    }
+}
+
+.socialMediaIcons {
+
+    & img {
+        width: 2.5rem;
+        margin: 0 0.5rem 0 0;
+
+        @include atMediumBelow {
+
+            width: 2.5rem;
+        }
+    }
+}
+
+.signUpArea {
+
+    display: flex;
+  
+
+    & input {
+        margin: 0 0 1rem 0;
+        height: 3rem;
+        border: 0.2rem solid $mainGrey;
+        width: 70%;
+
+        @include atSmallBelow {
+            height: 3rem;
+            width: 90%;
+        }
+    }
+}
+
+.signUpButton {
+    display: block;
+    margin: 0 0 1rem 0;
+    height: 3rem;
+    border: 0.2rem solid $mainGrey;
+    border-left: none;
+    background: white;
+
+    & img {
+        display: block;
+        height: 2.5rem;
+
+        @include atSmallBelow {
+          height: 2.5rem;
+        }
+    }
+
+    @include atSmallBelow {
+        height: 3rem;
+    }
+}
+
+.copyright {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 0 3rem 0;
+
+    @include atSmallBelow {
+
+        margin: 0 0 2rem 0;
+    }
+
+    & p {
+        grid-column: 1/4;
+
+        @include atSmallBelow {
+
+            grid-column: 1/5;
+        }
+    }
+}

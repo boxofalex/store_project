@@ -1,0 +1,104 @@
+@import '../../../styles/shared/index.scss';
+
+
+
+
+
+.orderSummaryArea {
+
+
+}
+
+
+.mainTitle {
+
+
+}
+
+
+.summaryItem {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 1rem;
+    margin: 0 0 2rem 0;
+}
+
+.summaryItemImage {
+
+  & img {
+
+      width: 6rem;
+  }
+}
+
+.itemHandle {
+
+
+}
+
+.itemName {
+
+  margin: 0 0 0.5rem 0;
+}
+
+.itemQuantity {
+
+
+}
+
+
+
+
+
+.itemPrice {
+
+
+}
+
+
+.subtotalPriceArea {
+
+    display: grid;
+    gap: 0.5rem 0.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem 0;
+}
+
+.subtotalTitle {
+
+
+}
+
+.priceSubtotal {
+
+
+}
+
+.shippingTitle {
+
+
+}
+
+.shippingSubtotal {
+
+
+}
+
+.grandTotalArea {
+
+    display: grid;
+    gap: 0.5rem 0.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem 0;
+}
+
+.grandTotalTitle {
+
+
+}
+
+.grandTotal {
+
+
+}

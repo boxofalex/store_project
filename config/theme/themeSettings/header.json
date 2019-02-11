@@ -1,0 +1,30 @@
+{
+    "logo": "/assets/images/logo.png",
+    "utilities": {
+        "icons": {
+            "flag": {
+                "usa": "/assets/images/usa-flag.png"
+            },
+            "cart": "/assets/images/cart.png",
+            "point": "/assets/images/point.png",
+            "question": "/assets/images/question.png",
+            "user": "/assets/images/user.png"
+        }
+    },
+    "mobileBar": {
+        "icons": {
+            "search": "/assets/images/search.png",
+            "cart": "/assets/images/cart.png"
+        }
+    },
+    "searchBar": {
+        "icons": {
+            "search": "/assets/images/search.png"
+        }
+    },
+    "mainNavigation": {
+        "icons": {
+            "arrowRound": "/assets/images/arrow_round.png"
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@import '../../../styles/shared/index.scss';
+
+
+.decrement {
+ 
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+}
+
+.increment {
+
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+}
+
+.handle {
+
+    display: flex;
+    justify-content: center;
+
+    & input {
+
+        width: 4rem;
+        text-align: center;
+    }
+}

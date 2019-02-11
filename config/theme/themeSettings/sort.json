@@ -1,0 +1,5 @@
+{
+    "sortNewest":"-date_created",
+    "sortPriceLow":"regular_price",
+    "sortPriceHigh":"-regular_price"
+}

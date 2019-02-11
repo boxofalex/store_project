@@ -1,0 +1,76 @@
+@import '../../../styles/shared/index.scss';
+
+.searchBar {
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 0.5rem 0 0;
+    grid-column: 7/11;
+    grid-row: 2/3;
+    background: white;
+
+
+    & input {
+        display: block;
+        width: 60%;
+        border: 0.1rem solid $mainGrey;
+        height: 2rem;
+    }
+
+    & span {
+        display: block;
+        border: 0.1rem solid $mainGrey;
+        border-left: none;
+        background: white;
+        height: 2rem;
+    }
+
+    & img {
+        display: block;
+        width: 1.8rem;
+    }
+
+    @include atMediumBelow {
+
+        max-height: 0;
+        padding: 0;
+        overflow: hidden;
+        position: absolute;
+        height: 3rem;
+        top: 4rem;
+        left: 0rem;
+        width: 100%;
+        transition: max-height 0.15s ease-out;
+        justify-content: center;
+
+    }
+
+    @include atMedium {
+        
+        & input {
+            width: 60%;
+        }
+    }
+
+    @include atSmallBelow {
+
+        justify-content: left;
+
+        & input {
+            width: 90%;
+        }
+    }
+}
+
+
+.searchBar.active {
+
+    max-height: 0;
+
+    @include atMediumBelow {
+        max-height: 10rem;
+        transition: max-height 0.25s ease-in;
+    }
+}
+

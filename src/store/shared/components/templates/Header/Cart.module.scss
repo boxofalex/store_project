@@ -1,0 +1,117 @@
+@import '../../../styles/shared/index.scss';
+
+@import '../../../styles/shared/index.scss';
+
+.cart {
+
+    padding: 2rem 0 0 0;
+}
+
+.productDetails {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem 2rem;
+    margin: 0 0 2rem 0;
+}
+
+.productImage {
+
+    grid-column: 1/2;
+
+    & img {
+
+        width: 4rem;
+    }
+}
+
+.productNameQuantity {
+
+    grid-column: 2/3;
+}
+
+.productName {
+
+    margin: 0 0 0.5rem 0;
+}
+
+.productPriceRemove {
+
+    grid-column: 3/4;
+    text-align: right;
+}
+
+.productPrice {
+
+    margin: 0 0 0.5rem 0;
+}
+
+.line {
+
+    background: $mainOrange;
+    height: 0.1rem;
+}
+
+.empty {
+
+    text-align: center;
+    padding: 2rem 0 0 0;
+
+    & h2 {
+        font-size: 1.2rem;
+        margin: 5rem;
+    }
+}
+
+.totalArea {
+
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: flex-end;
+    gap: 0.5rem 2rem;
+}
+
+.totalSubArea {
+
+    text-align: right;
+}
+
+.totalTitle {
+
+    margin: 0.5rem 0;
+}
+
+.total {
+
+    margin: 0.5rem 0;
+}
+
+.checkoutLink {
+
+    margin: 0.5rem 0;
+    grid-column: 1/4;
+    text-align: center;
+
+    & a {
+        font-size: 1.2rem;
+        font-weight: 900;
+        color: $mainOrange;
+        text-transform: uppercase;
+    }
+}
+
+.remove {
+
+    cursor: pointer;
+}
+
+.closeButton {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2rem;
+    margin: 0.5rem 0.5rem 0 0;
+}
+

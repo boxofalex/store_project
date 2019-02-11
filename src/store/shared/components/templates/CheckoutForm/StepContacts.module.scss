@@ -1,0 +1,53 @@
+@import '../../../styles//shared/index.scss';
+
+.submitButton {
+
+   
+
+    & button {
+        padding: 0.5rem 1rem;
+        margin: 0 0 0 6rem;
+    }
+}
+
+.shippingArea {
+
+    margin: 1rem 0;
+
+    & label {
+
+        display: grid;
+        grid-template-columns: 2rem 4rem 4rem 4rem;
+        margin: 0.5rem 0;
+    }
+}
+
+.radioButton {
+
+    grid-column: 1/2;
+}
+
+.optionDescription {
+
+    grid-column: 2/4;
+}
+
+.optionPrice {
+
+    grid-column: 4/5;
+}
+
+
+.paymentArea {
+
+    margin: 1rem 0;
+
+    & label {
+
+        display: grid;
+        grid-template-columns: 2rem 8rem;
+        margin: 0.5rem 0;
+    }
+}
+
+

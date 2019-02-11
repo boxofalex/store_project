@@ -1,0 +1,50 @@
+{
+    "imageSlider": {
+        "items": {
+            "pic1": "/assets/images/shoe1.jpg",
+            "pic2": "/assets/images/shoe2.jpg",
+            "pic3": "/assets/images/shoe3.jpg"
+        }
+    },
+    "infoBlocks": {
+        "items": {
+            "item1": {
+                "pic": "/assets/images/index1.jpeg",
+                "title": "THE 1990 MOUNTAIN JACKET",
+                "text": "Revolutionary then, iconic now. Our faithful recreation features the original feature set.",
+                "link": "/"
+            },
+            "item2": {
+                "pic": "/assets/images/index2.jpeg",
+                "title": "GEAR FOR THE OUTER LIMITS",
+                "text": "Engineered from the ground up in partnership with our athletes— this is one kit for any mission.",
+                "link": "/"
+            },
+            "item3": {
+                "pic": "/assets/images/index3.jpeg",
+                "title": "NEW YEAR. NEW GEAR.",
+                "text": "Stay committed to your fitness goals with durable training gear.",
+                "link": "/"
+            },
+            "item4": {
+                "pic": "/assets/images/index4.jpeg",
+                "title": "THE NORTH FACE EXPLORE FUND",
+                "text": "Our fund enables outdoor exploration for everyone.",
+                "link": "/"
+            },
+            "item5": {
+                "pic": "/assets/images/index5.jpeg",
+                "title": "YESICA CHAVEZ",
+                "text": "Recreation ambassador, community leader, student, explorer.",
+                "link": "/"
+            },
+            "item6": {
+                "pic": "/assets/images/index6.jpeg",
+                "title": "THE NORTH FACE RENEWED",
+                "text": "Our latest collection of refurbished apparel.",
+                "link": "/"
+            }
+            
+        }
+    }
+}

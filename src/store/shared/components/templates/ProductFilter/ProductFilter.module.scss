@@ -1,0 +1,87 @@
+@import '../../../styles/shared/index.scss';
+
+
+.productFilterArea {
+
+    margin: 1rem;
+
+    @include atMediumBelow {
+
+        margin: 0;
+    }
+}
+
+.attributeFilter {
+
+    margin: 1rem 0 2rem 0;
+
+    & h2 {
+
+        text-align: left;
+        text-transform: uppercase;
+    }
+}
+
+.filterProductsButton {
+
+    & button {
+        width: 70%;
+        height: 2rem;
+        background: $mainOrange;
+        text-transform: uppercase;
+    }
+}
+
+.hidden {
+
+    display: none;
+}
+
+.sortFilterArea {
+
+    @include atMediumBelow {
+        display: none;
+    }
+}
+
+.sortFilterArea.active {
+
+    display: block;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    width: 70%;
+    padding: 2rem 2rem;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    z-index: 200;
+    background: white;
+
+    @include atSmallBelow {
+        width: 90%;
+    }
+}
+
+
+.darken {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 150;
+}
+
+.closeButton {
+
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+
+    & img {
+        width: 2rem;
+    }
+}

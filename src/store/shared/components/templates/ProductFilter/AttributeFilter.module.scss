@@ -1,0 +1,39 @@
+@import '../../../styles/shared/index.scss';
+
+.attributeSet {
+
+    margin: 1rem 0 2rem 0;
+}
+
+.attributeName {
+    
+    text-align: left;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.attributeValues {
+  
+    @include atMediumBelow {
+        text-align: left;
+    }
+
+}
+
+.attributeValue {
+
+    display: block;
+    text-align: left;
+    margin: 0 0 0.3rem 0;
+
+    @include atMediumBelow {
+
+        display: inline-block;
+        margin: 0 0.5rem 0 0;
+    }
+
+    & input {
+        margin: 0 0.5rem 0 0;
+        height: 1rem;
+    }
+}

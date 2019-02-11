@@ -1,0 +1,11 @@
+{
+    "icons": {
+        "close": "/assets/images/close.png",
+        "plusButton": "/assets/images/plus-button.png",
+        "minusButton": "/assets/images/minus-button.png"
+    },
+    "text": {
+        "returnsInfo": "We offer a Free UK returns service via Royal Mail",
+        "deliveryInfo": "We offer a range of delivery methods which you are able to select at the checkout process. We deliver to the whole of the UK. However please note that certain services might be restricted in some areas and deliveries may take longer (these areas are listed below)."
+    }
+}

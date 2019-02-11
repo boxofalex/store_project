@@ -1,0 +1,67 @@
+{
+    "socialMedia": {
+        "title": "followUs",
+        "items": {
+           "facebook": {
+               "icon": "/assets/images/facebook.png",
+               "link": "/"
+           },
+           "twitter": {
+               "icon": "/assets/images/twitter.png",
+               "link": "/"
+           },
+           "instagram": {
+               "icon": "/assets/images/instagram.png",
+               "link": "/"
+           },
+           "youtube": {
+               "icon": "/assets/images/youtube.png",
+               "link": "/"
+           }
+        }
+    },
+    "signUpForm": {
+        "icon": "/assets/images/send.png",
+        "placeholder": "Sign Up",
+        "title": "enterEmail",
+        "subtitle": "AdventureIs"
+    },
+    "copyright": "copyright",
+    "logo": "/assets/images/logo.svg",
+    "footerNavigation": {
+        "company": {
+            "title": "company",
+            "items": {
+                "about": {
+                    "name": "about",
+                    "link": "/about"
+                },
+                "blog": {
+                    "name": "blog",
+                    "link": "/blog"
+                },
+                "terms": {
+                    "name": "terms",
+                    "link": "/terms-of-service"
+                },
+                "policy": {
+                    "name": "policy",
+                    "link": "/privacy-policy"
+                }
+            }
+        },
+        "customerService": {
+            "title": "customerService",
+            "items": {
+                "shipping": {
+                    "name": "shipping",
+                    "link": "/shipping-and-returns"
+                },
+                "conditions": {
+                    "name": "conditions",
+                    "link": "/conditions-of-use"
+                }
+            }
+        }
+    }
+}

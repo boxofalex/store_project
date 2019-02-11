@@ -1,0 +1,37 @@
+@import '../../../styles//shared/index.scss';
+
+.shippingArea {
+
+    margin: 3rem 0;
+}
+
+.shippingAreaTitle {
+
+    margin: 0 0 1rem 0;
+}
+
+.sameAsBilling {
+
+    margin: 1rem 0;
+}
+
+.sameAsBillingTitle {
+
+    margin: 0.5rem 0;
+}
+
+.sameAsBillingForm {
+
+  display: grid;
+  grid-template-columns: 2rem 15rem;
+}
+
+.sameAsBillingFormInput {
+
+
+}
+
+.sameAsBillingFormLabel {
+
+
+}

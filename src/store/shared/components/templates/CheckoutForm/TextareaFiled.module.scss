@@ -1,0 +1,17 @@
+@import '../../../styles/shared/index.scss';
+
+
+.textAreaField {
+
+    & label {
+
+        display: block;
+        margin: 0 0 0.5rem 0;
+    }
+
+    & textarea {
+
+        display: block;
+        width: 80%;
+    }
+}

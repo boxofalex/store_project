@@ -1,0 +1,100 @@
+@import '../../styles/shared/index.scss';
+
+.categoryBreadcrumbs {
+
+    display: block;
+    margin: 0 0 1rem 0;
+   
+    & ul {
+
+    }
+
+    & li {
+        display: inline-block;
+        margin: 0 0.5rem 0 0;
+
+        & a {
+            color: $mainGrey;
+            font-size: 1.2rem;
+        }
+    }
+
+}
+
+.categoryHero {
+
+    width: 95%;
+    margin: 0 auto;
+    padding: 1rem 0 1rem 0;
+
+    @include atMediumBelow {
+        
+        width: 95%;
+    }
+}
+
+.productContainer {
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 95%;
+    margin: 0 auto 6rem;
+
+    @include atMediumBelow {
+
+        width: 100%;
+    }
+}
+
+.productSortList {
+    grid-column: 2/7;
+
+    @include atMediumBelow {
+
+        grid-column: 1/7;
+    }
+}
+
+.productFilter {
+    
+    grid-column: 1/2;
+    background: $lightGrey;
+    text-align: center;
+
+    @include atMediumBelow {
+
+        grid-column: 1/7;
+        background: none;
+    }
+}
+
+.productSort {
+
+    text-align: right;
+
+    @include atMediumBelow {
+
+        display: none;
+    }
+}
+
+.productList {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem 2rem;
+    justify-content: center;
+    margin: 2rem 1rem 0 1rem;
+
+    @include atMediumBelow {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include atSmallBelow {
+
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+   
+}

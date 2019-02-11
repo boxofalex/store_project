@@ -1,0 +1,26 @@
+@import '../../../styles/shared/index.scss';
+
+
+.priceSlider {
+
+    margin: 0;
+}
+
+.priceTitle {
+
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.priceRange {
+
+    width: 100%;
+}
+
+.priceIndicators {
+     
+    display: flex;
+    margin: 0.5rem 0 0 0;
+    justify-content: space-between;
+}

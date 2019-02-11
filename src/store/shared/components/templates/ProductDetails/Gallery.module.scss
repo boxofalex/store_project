@@ -1,0 +1,40 @@
+@import '../../../styles/shared/index.scss';
+
+
+.originalImage {
+   
+   max-width: 100%;
+   border: 1px solid $lightGrey;
+}
+
+.thumbnailImage {
+
+    width: 4rem;
+    border: 1px solid $lightGrey;
+}
+
+
+.container {
+
+    border: 0;
+
+    & > div {
+
+        height: 24rem;
+        display: flex;
+
+        & > div:first-child {
+            width: 4rem;
+            height: 24rem!important; 
+        }
+
+        & > div:last-child {
+            max-width: 24rem;
+        }
+
+        @include atMediumBelow {
+
+            justify-content: center;
+        }
+    }
+}

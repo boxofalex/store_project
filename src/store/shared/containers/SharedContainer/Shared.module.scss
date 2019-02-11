@@ -1,0 +1,14 @@
+@import '../../styles/shared/index.scss';
+
+
+.main {
+
+    min-height: 50vh;
+    margin: 5.5rem 0 0 0;
+    width: 100%;
+
+    @include atMediumBelow {
+
+        margin: 4.5rem 0 0 0;
+    }
+}

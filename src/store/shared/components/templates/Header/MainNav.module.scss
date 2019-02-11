@@ -1,0 +1,346 @@
+@import '../../../styles/shared/index.scss';
+
+
+.mainNavigation {
+    
+    grid-column: 2/7;
+    grid-row: 2/3;
+    padding: 0 0 0 1rem;
+    transition: max-height 0.15s ease-in-out;
+
+    @include atMediumBelow {
+
+        max-height: 0;
+        padding: 0;
+        overflow: hidden;
+        position: absolute;
+        top: 4rem;
+        left: 0rem;
+        width: 100%;
+        transition: max-height 0.15s ease-out;
+    }
+}
+
+.mainNavigation.isToggled {
+
+    max-height: 0;
+
+    @include atMediumBelow {
+        max-height: 100vh;
+        transition: max-height 0.25s ease-in;
+        border-bottom: 0.5rem solid $mainOrange;
+    }
+}
+
+.active {
+
+    border: 0;
+}
+
+.hasItems {
+
+    border: 0;
+}
+
+.catParent {
+
+    border: 0;
+}
+
+.navLevel0 {
+
+    display: flex;
+    height: 3rem;
+    margin: 0;
+    background: white;
+
+    & li {
+        display: inline-block;
+        width: 10rem;
+        margin: 0 1rem 0 0;
+        
+        @include atMediumBelow {
+            margin: 0;
+            display: block;
+            width: 100%;
+        }
+    }
+
+    @include atMediumBelow {
+
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+}
+
+.navLevel0 > li {
+
+    @include atMediumBelow {
+
+        background: $lightGrey;
+    }
+}
+
+.navLevel0 li > .catParent {
+
+    height: 3rem;
+    padding: 0.5rem 0 0 0.5rem;
+
+    & a {
+        color: $mainGrey;
+    }
+
+    & > span:last-child img {
+
+        display: none;
+    }
+
+    @include atMediumBelow {
+
+        display: flex;
+        height: 3rem;
+        padding: 0 1rem 0 1rem;
+        justify-content: space-between;
+
+        & > span:first-child {
+
+            width: 90%;
+            display: flex;
+            align-items: center;
+        }
+
+        & > span:last-child {
+
+            display: flex;
+            align-items: center;
+        }
+
+        & > span:last-child img{
+
+            display: block;
+            width: 2rem;
+            transition: all 0.15s ease-in;
+        }
+    }
+}
+
+.mainCategoryTitle {
+
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: 2px;
+
+    @include atMediumBelow {
+      
+    }
+   
+}
+
+.mainCategoryTitle:hover {
+
+    
+}
+
+
+.navLevel1 {
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    font-family: 'Scada', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    justify-items: center;
+    width: 100%;
+    height: 20rem;
+    position: absolute;
+    max-height: 0;
+    overflow: hidden;
+    left: 0;
+    padding: 0;
+    transition: max-height 0.15s ease-out;
+    background: $lightGrey;
+
+    @include atMediumBelow {
+
+        position: inherit;
+        height: auto;
+        display: block;
+    }
+}
+
+.navLevel1 > li .catParent {
+
+    padding: 1rem 0 0 0;
+    height: 2rem;
+
+    & > span:last-child img {
+
+        display: none;
+    }
+
+    @include atMediumBelow {
+
+        display: flex;
+        height: 3rem;
+        background: $superlightGrey;
+        padding: 0 1rem 0 1rem;
+        justify-content: space-between;
+
+        & > span:first-child {
+
+            width: 90%;
+            display: flex;
+            align-items: center;
+        }
+
+        & > span:last-child {
+
+            display: flex;
+            align-items: center;
+        }
+
+        & > span:last-child img{
+
+            display: block;
+            width: 2rem;
+            transition: all 0.15s ease-in;
+        }
+    }
+}
+
+
+.navLevel2 {
+
+
+    @include atMediumBelow {
+
+        max-height: 0;
+        overflow: hidden;
+        left: 0;
+        transition: max-height 0.15s ease-out;
+        position: inherit;
+        display: block;
+        background: $superlightGrey;
+    }
+}
+
+
+.navLevel2 > li {
+
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding: 0 0 0 0.5rem;
+    text-transform: lowercase;
+
+    @include atMediumBelow {
+
+        padding: 0 0 0 2rem;
+    }
+}
+
+
+
+.shopAll {
+   width: 100%;
+   padding: 1rem 0 0 1rem;
+   font-weight: bold;
+   font-size: 1.2rem;
+   
+   & span {
+       display: block;
+       text-align: center;
+
+       & a {
+           color: $mainGrey;
+           font-size: 1.2rem;
+           font-weight: 900;
+       }
+   }
+
+   @include atMediumBelow {
+
+    display: none;
+   }
+}
+
+.activeSubMenu {
+
+    border: 0;
+}
+
+.navLevel1:hover {
+
+    max-height: 20rem;
+    transition: max-height 0.25s ease-in;
+    border-bottom: 0.5rem solid $mainOrange;
+
+    @include atMediumBelow {
+        
+        max-height: 0;
+        border-bottom: none;
+    }
+}
+
+.active.hasItems .navLevel1 {
+
+    max-height: 20rem;
+    transition: max-height 0.25s ease-in;
+    border-bottom: 0.5rem solid $mainOrange;
+
+    @include atMediumBelow {
+
+        max-height: 0;
+        border-bottom: none;
+    }
+}
+
+.navLevel1.activeSubMenu {
+    
+    max-height: 0;
+
+    @include atMediumBelow {
+
+        max-height: 100vh;
+        transition: max-height 0.25s ease-in;
+    }
+}
+
+
+.navLevel2.activeSubMenu {
+    
+    max-height: 0;
+
+    @include atMediumBelow {
+
+        max-height: 100vh;
+        transition: max-height 0.25s ease-in;
+    }
+}
+
+
+.rotate img {
+
+transform: rotate(90deg);
+transition: all 0.15s ease-in;
+
+}
+
+
+.navLevel2 {
+
+    border: 0;
+    display: block;
+
+    & li {
+        display: block;
+    }
+}
+
+.isActvie {
+
+    border: 0;
+}

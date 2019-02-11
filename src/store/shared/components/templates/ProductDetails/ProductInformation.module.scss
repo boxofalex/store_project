@@ -1,0 +1,56 @@
+@import '../../../styles/shared/index.scss';
+
+.productInformationArea {
+
+}
+
+
+.productInformation {
+
+    padding: 0;
+    margin: 0;
+
+    & ul {
+        display: inline-block;
+    }
+
+    & li {
+
+        display: inline-block;
+        margin: 0;
+        padding: 0.4rem 0.4rem;
+        cursor: pointer;
+        border: 0.1rem solid $lightGrey;
+        border-bottom: none;
+    } 
+
+    & li:first-child {
+
+        border-right: none;
+        border-radius: 7px 0 0 0;
+    }
+
+    & li:last-child {
+
+        border-left: none;
+        border-radius: 0 7px 0 0;
+    }
+
+}
+
+.block {
+
+    border: 0.1rem solid $lightGrey;
+    background: $lightGrey;
+    padding: 2rem 1rem 4rem 1rem;
+    border-radius: 0 7px 7px 7px;
+}
+
+.activeTab {
+
+    background: $lightGrey;
+}
+
+
+
+
